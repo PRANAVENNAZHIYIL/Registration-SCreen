@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:registrtion_screen/sucess_Screen.dart';
 import 'package:registrtion_screen/widgets/passwordformfield.dart';
 import 'package:registrtion_screen/widgets/textformfield.dart';
 
@@ -18,14 +17,7 @@ class _RegistrationScrenState extends State<RegistrationScren> {
   bool obserText = true;
 
   void _submitForm() {
-    if (_formKey.currentState!.validate()) {
-      // Registration successful, do something here
-    }
-    Navigator.of(context).pushReplacement(
-      MaterialPageRoute(
-        builder: (ctx) => const SucessScreen(),
-      ),
-    );
+    if (_formKey.currentState!.validate()) {}
   }
 
   @override
